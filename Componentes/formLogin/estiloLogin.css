@@ -1,0 +1,39 @@
+.div_form{
+    display: grid;
+    grid-template-areas: 
+        "left center right";
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.form_login {
+    justify-self: center;
+    max-width: 200px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 10px;
+    padding: 1rem;
+    grid-area: center;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.title {
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.div_campos{
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.enviar {
+    max-width: max-content;
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>InVeste!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="estiloForm.css"
+      media="screen"
+    />
+  </head>
+  <body>
+    <div class="div_form">
+      <form class="form_cadastro" action="handleCadastro.php" method="post">
+        <h2 class="titulo">Cadastra-se</h2>
+        <div class="campos">
+          <label class="label" for="Nome">Nome</label>
+          <input
+            class="campo"
+            name="nome"
+            placeholder="digite seu nome"
+            type="text"
+            required
+          />
+        </div>
+        <div class="campos">
+          <label class="label" for="CPF">CPF</label>
+          <input
+            class="campo"
+            name="cpf"
+            placeholder="informe seu cpf"
+            type="text"
+            required
+          />
+        </div>
+
+        <div class="campos">
+          <label class="label" for="Endereço">Endereço</label>
+          <input class="campo" name="endereco" type="text" required />
+        </div>
+
+        <div class="campos">
+          <label class="label" for="Contato">Contato</label>
+          <input
+            class="campo"
+            name="telefone"
+            placeholder="(xx) xxxxx-xxxx"
+            type="tel"
+            required
+          />
+        </div>
+
+        <div class="campos">
+          <label class="label" for="Email">Email</label>
+          <input
+            class="campo"
+            name="email"
+            placeholder="exemplo@mail.com"
+            type="email"
+            required
+          />
+        </div>
+
+        <div class="campos">
+          <label class="label" for="Senha">Senha</label>
+          <input class="campo" name="senha" type="text" required />
+        </div>
+
+        <div class="campos">
+          <label class="label">Selecione uma foto de perfil:</label>
+          <input class="campo" name="imagem" type="file" />
+        </div>
+
+        <input class="button" type="submit" value="Enviar" />
+      </form>
+    </div>
+  </body>
+</html>

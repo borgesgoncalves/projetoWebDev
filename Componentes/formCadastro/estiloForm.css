@@ -1,0 +1,61 @@
+.div_form {
+    font-size: small;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.form_cadastro {
+    justify-self: center;
+    max-width: 500px;
+    padding: 1rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.titulo {
+    justify-self: center;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.label {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.campo {   
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    width: 70%;
+    border-color: rgb(180, 180, 180);
+    border-radius: 10px;
+    padding: 6px
+}
+
+.button {
+    margin-top: 2rem ;
+    justify-self: center;
+    width: 30%;
+}
+
+@media screen and (max-width: 500px) {
+body {
+    font-size: 80%;
+}
+.form_cadastro {
+    width: 100%;
+}
+
+.div_form {
+    display: 
+}
+}

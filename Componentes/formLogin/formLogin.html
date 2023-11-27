@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>InVeste!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./estiloLogin.css" media="screen" />
+    <style type="text/css">.body { width: auto; }</style>
+  </head>
+  <body>
+    <div class="div_form">
+      <form class="form_login" action="handleLogin.php" method="post">
+        <h2 class="title"> Login </h2>
+        <div class="div_campos" action="" method="post">
+          <label for="Email">Email</label>
+          <input class="campo_email" name="email" placeholder="exemplo@mail.com" type="email" required/>
+          
+          <label for="Senha">Senha</label>
+          <input class="campo_senha" name="senha" type="text" required/>
+        </div>
+        
+        <input class="enviar" type="submit" value="Enviar">
+      </form>
+    </div>
+  </body>
+</html>

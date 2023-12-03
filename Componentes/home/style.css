@@ -1,0 +1,125 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ececec; 
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+button {
+  background-color: #ffec5a;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; 
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(240, 246, 123);
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: goldenrod;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#botaoLogin {
+  font-size: 18px;
+  width:bold;
+}
+
+.carrinho-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 90px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.carrinho-icon img {
+  width: 40px; 
+  height: 40px;
+}
+
+.carrinho-icon:hover {
+  transform: scale(1.2);
+}
+
+.cartao {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartao:hover {
+  transform: scale(1.05);
+}
+
+.cartao img {
+  height: auto;
+}
+
+img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.preco {
+  color: #e44d26; 
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.adicionar-ao-carrinho-btn {
+  background-color: #d3db34;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: block; 
+  margin: 0 auto; 
+}
+
+.adicionar-ao-carrinho-btn:hover {
+  background-color: rgb(230, 241, 15);
+}
+

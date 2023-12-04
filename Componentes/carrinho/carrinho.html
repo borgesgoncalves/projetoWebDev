@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="estilo_carrinho.css">
+      <title>Carrinho de Compras</title>
+   </head>
+   <body>
+		  <div class="carrinho">
+		  <h2>Carrinho de Compras</h2>
+		  <ul id="cart-items"></ul>
+			
+         <div class="calculaFrete">
+            <form action="" onsubmit="buscaDados(); return false;">
+               <b>Digite o CEP:</b><input type="text" id="cepInserido" name="cep" required><br>
+               <input type="submit" class="botao" value="Calcular frete">
+            </form>
+         </div>
+		 <div id="containerFrete">
+		 </div>
+			<p id="total">Valor total: R$ 0.00</p>
+			<button class="botao" onclick="checkout()">Prosseguir para o Checkout</button>
+		</div>
+      </div>
+      <script src="calculaFrete.js"></script> 
+   </body>
+</html>

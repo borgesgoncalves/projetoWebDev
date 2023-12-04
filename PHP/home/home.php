@@ -1,21 +1,28 @@
+<?php
+
+include('autorizacao.php');
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>InVeste</title>
-  <link rel="stylesheet" href="style.css ">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="container">
       <h1>InVeste - Sua roupa, seu estilo</h1>
-      <button id="botaoLogin">Login</button>
+      <a href="logout.php" id="botaoLogin">Logout</a>
     </div>
   </header>
   <main>
     <div class="carrinho-icon">
-      <img src="shopping-cart.svg" alt="Carrinho de Compras">
+      <a href="file:///C:/xampp/htdocs/carrinho.html">
+        <img src="shopping-cart.svg" alt="Carrinho de Compras">
+      </a>
     </div>
     <section id="feminino">
       <h2>Roupas Femininas</h2>

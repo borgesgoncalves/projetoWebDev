@@ -21,11 +21,16 @@ $stmt = $conexao->prepare("SELECT * FROM cliente WHERE email = ? AND senha = ?")
     $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
-        session_start();
-        $_SESSION['email'] = $email; // Armazene informações do usuário na sessão se necessário
+        echo "Usuário autenticado com sucesso";
+        
+        if(!isset($_SESSION)) {
+            session_start();
+        }
+        
+        $_SESSION['email'] = $email;
 
-        header("Location: info.php"); // Redirecionar
-        exit(); // Certifique-se de sair do script após o redirecionamento
+        header("Location: home.php");
+        exit(); 
     } else {
         echo "Email ou senha incorretos";
     }

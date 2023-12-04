@@ -122,6 +122,24 @@ ALTER TABLE `compra`
   ADD CONSTRAINT `fk_idProduto` FOREIGN KEY (`idProduto`) REFERENCES `produto` (`idProduto`);
 COMMIT;
 
+
+--
+-- Estoque
+--
+
+INSERT INTO produto (nomeProduto, quantidade, preco)
+VALUES
+  ('Vestido verde longo', 10, 99.99),
+  ('Vestido branco curto', 10, 99.99),
+  ('Calça de alfaiataria rosa', 10, 59.99),
+  ('Calça preta', 10, 79.99),
+  ('Calça cargo verde militar', 10, 89.99),
+  ('Blusa polo preta', 10, 99.99),
+  ('Vestido azul', 10, 89.99),
+  ('Vestido rosa florido', 10, 109.99),
+  ('Blusa branca básica', 10, 34.99);
+
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
